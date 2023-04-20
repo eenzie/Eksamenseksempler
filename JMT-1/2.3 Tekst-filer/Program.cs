@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,29 +11,39 @@ namespace _2._3_Tekst_filer
     {
         static void Main(string[] args)
         {
-            List<string> randomNumbers = new List<string>();
+            int[] index = new int[25];
+            Random random = new Random();
 
+            for (int i = 0; i < index.Length; i++)
+            {
+                index[i] = random.Next(20, 150);
+            }
 
-            //Console.WriteLine($"Random number between 5 and 100 is {randomNumber}");
+            RandomNumber(index);
 
+            Console.WriteLine("Result written to text file 'randomtal.txt'");
+            Console.ReadLine();
         }
 
+        //public static void RandomNumber(int[] array)
+        //{
+        //    var dataoutput = "";
 
-        public static string RandomNumber()
+        //    foreach (int i in array)
+        //    {
+        //        dataoutput += $"{i}, ";
+        //    }
+
+        //    System.IO.File.WriteAllText("randomtal.txt", dataoutput);
+        //}
+
+        public static void RandomNumber(int[] array)
         {
-            var result = string.Empty;   // variable to hold the result
-            Random randomNum = new Random();   // built in auto generator (algorithm) for random numbers
+            // Format the output string with comma-separated values
+            var dataOutput = string.Join(", ", array);
 
-            while (result.Length <= 25)   // while loop to generate 9 numbers
-            {
-                var number = randomNum.Next(20, 150);   // temp variable that then 
-                result += number.ToString();   // adds the value to the result
-
-                //alternative
-                // result += rnd.Next(1, 10).ToString();
-            }
-            return result;   // when done, result is returned
-
+            // Write the formatted string to a file
+            System.IO.File.WriteAllText("randomtal.txt", dataOutput);
         }
     }
 }

@@ -30,22 +30,32 @@ namespace _2_5_Brille_Rabat.Models
         /// <returns>Discounted sales price</returns>
         public double RabatPris()
         {
-            if (SalgsPris >= 1000 && Antal > 1)
+            //if (SalgsPris >= 1000 && Antal > 1)
+            //{
+            //    var rabat = (double)SalgsPris * 0.05;
+            //    var rabatPris = SalgsPris - rabat;
+            //    return rabatPris;
+            //}
+            //if (SalgsPris >= 1000 && Antal == 1)
+            //{
+            //    var rabat = SalgsPris * 0.5;
+            //    var rabatPris = SalgsPris - rabat;
+            //    return rabatPris;
+            //}
+            //else
+            //{
+            //    return SalgsPris;
+            //}
+
+            if (SalgsPris > 1000)
             {
-                var rabat = (double)SalgsPris * 0.05;
-                var rabatPris = SalgsPris - rabat;
-                return rabatPris;
+                if (Antal == 1)
+                {
+                    return SalgsPris * 0.5;
+                }
+                return SalgsPris * 0.95; //also 5% discount, just the other way around
             }
-            if (SalgsPris >= 1000 && Antal == 1)
-            {
-                var rabat = SalgsPris * 0.5;
-                var rabatPris = SalgsPris - rabat;
-                return rabatPris;
-            }
-            else
-            {
-                return SalgsPris;
-            }
+            return SalgsPris;
         }
     }
 }

@@ -22,29 +22,31 @@ namespace _2._5_Brille_Rabat
 
             briller.Add(new Brille(1, "Chanel", 1899.00, 14));
             briller.Add(new Brille(2, "Police", 799.00, 3));
-            briller.Add(new Brille(3, "Gucci", 2899.00, 1));
+            briller.Add(new Brille(3, "Gucci", 2000.00, 1));
             briller.Add(new Brille(4, "Mui", 599.00, 36));
 
             foreach (var brille in briller)
             {
-                Console.WriteLine("Vare nr: "
-                    + brille.VareNr + ". - Brille navn: "
-                    + brille.BrilleNavn + " - Salgspris: "
-                    + brille.Antal + " stk. - Rabat pris: "
-                    + brille.SalgsPris + " kr. - Antal: "
-                    + brille.RabatPris() + "kr.");
+                Console.WriteLine($"Vare nr: {brille.VareNr}. " +
+                    $"- Brille navn: {brille.BrilleNavn}. " +
+                    $"- Salgspris: {brille.SalgsPris.ToString("C")}. " +
+                    $"- Rabat pris: {brille.RabatPris().ToString("C")}. " +
+                    $"- Antal: {brille.Antal}stk.");
             }
 
-            //VIRKER IKKE!
-            //var totalSalgspris = Brille.antal * Brille.SalgsPris;
-            //Virker, men ikke uden udregning ovenover
-            //var totalRabatPris = briller.Sum(x => x.RabatPris());
+            double totalSalgspris = 0;
+            double totalRabatPris = 0;
 
-            //Console.WriteLine($"Total salgspris: {totalSalgspris}");
-            //Console.WriteLine($"Total rabat pris: {totalRabatPris}");
+            foreach (var brille in briller)
+            {
+                totalSalgspris += brille.SalgsPris * brille.Antal;
+                totalRabatPris += brille.RabatPris() * brille.Antal;
+            }
+
+            Console.WriteLine($"Total salgspris: {totalSalgspris.ToString("C")}");
+            Console.WriteLine($"Total rabat pris: {totalRabatPris.ToString("C")}");
 
             Console.ReadLine();
-
         }
     }
 }
