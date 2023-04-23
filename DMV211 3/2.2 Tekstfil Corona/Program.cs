@@ -18,39 +18,24 @@ namespace _2._2_Tekstfil_Corona
                 varighed.Add(Int32.Parse(item));
             }
 
-            var enDag = varighed.Where(x => x == 1).Count();
-            var toDage = varighed.Where(x => x == 2).Count();
-            var treDage = varighed.Where(x => x == 3).Count();
-            var fireDage = varighed.Where(x => x == 4).Count();
-            var femDage = varighed.Where(x => x == 5).Count();
-            var seksDage = varighed.Where(x => x == 6).Count();
-            var syvDage = varighed.Where(x => x == 7).Count();
-            var otteDage = varighed.Where(x => x == 8).Count();
-            var niDage = varighed.Where(x => x == 9).Count();
-            var tiDage = varighed.Where(x => x == 10).Count();
-            var overTiDage = varighed.Where(x => x >= 11).Count();
-            var antalRegi = varighed.Count();
-            var gennemsnit = varighed.Sum() / antalRegi;
-            var maxDage = varighed.Max();
+            StringBuilder dataoutput = new StringBuilder();
 
-            string dataoutput = "";
+            dataoutput.AppendLine($"1 dag: {varighed.Where(x => x == 1).Count()}");
+            dataoutput.AppendLine($"2 dage: {varighed.Where(x => x == 2).Count()}");
+            dataoutput.AppendLine($"3 dage: {varighed.Where(x => x == 3).Count()}");
+            dataoutput.AppendLine($"4 dage: {varighed.Where(x => x == 4).Count()}");
+            dataoutput.AppendLine($"5 dage: {varighed.Where(x => x == 5).Count()}");
+            dataoutput.AppendLine($"6 dage: {varighed.Where(x => x == 6).Count()}");
+            dataoutput.AppendLine($"7 dage: {varighed.Where(x => x == 7).Count()}");
+            dataoutput.AppendLine($"8 dage: {varighed.Where(x => x == 8).Count()}");
+            dataoutput.AppendLine($"9 dage: {varighed.Where(x => x == 9).Count()}");
+            dataoutput.AppendLine($"10 dage: {varighed.Where(x => x == 10).Count()}");
+            dataoutput.AppendLine($"Mere end 10 dage: {varighed.Where(x => x >= 11).Count()}");
+            dataoutput.AppendLine($"Antal registreringer: {varighed.Count}");
+            dataoutput.AppendLine($"Gennemsnit: {varighed.Sum() / varighed.Count()}");
+            dataoutput.AppendLine($"Max dage: {varighed.Max()}");
 
-            dataoutput += $"1 dag: {enDag}" + Environment.NewLine;
-            dataoutput += $"2 dage: {toDage}" + Environment.NewLine;
-            dataoutput += $"3 dage: {treDage}" + Environment.NewLine;
-            dataoutput += $"4 dage: {fireDage}" + Environment.NewLine;
-            dataoutput += $"5 dage: {femDage}" + Environment.NewLine;
-            dataoutput += $"6 dage: {seksDage}" + Environment.NewLine;
-            dataoutput += $"7 dage: {syvDage}" + Environment.NewLine;
-            dataoutput += $"8 dage: {otteDage}" + Environment.NewLine;
-            dataoutput += $"9 dage: {niDage}" + Environment.NewLine;
-            dataoutput += $"10 dage: {tiDage}" + Environment.NewLine;
-            dataoutput += $"Mere end 10 dage: {overTiDage}" + Environment.NewLine + Environment.NewLine;
-            dataoutput += $"Antal registreringer: {antalRegi}" + Environment.NewLine + Environment.NewLine;
-            dataoutput += $"Gennemsnit: {gennemsnit}" + Environment.NewLine + Environment.NewLine;
-            dataoutput += $"Max dage: {maxDage}";
-
-            System.IO.File.AppendAllText("overblik.txt", dataoutput);
+            System.IO.File.AppendAllText("overblik.txt", dataoutput.ToString());
             Console.Write("Resultaterne er skrevet til filen overblik.txt");
             Console.ReadLine();
         }

@@ -25,6 +25,7 @@ namespace _2._3_Tekst_filer
             Console.ReadLine();
         }
 
+        //Antons løsning
         //public static void RandomNumber(int[] array)
         //{
         //    var dataoutput = "";
