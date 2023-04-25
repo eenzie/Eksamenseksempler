@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E21D031-9FAD-45E2-B460-E406FC960DA7}</ProjectGuid>
+    <ProjectGuid>{BD3AC549-453C-45F3-BDC3-F65003984FFF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2._5_Cykelløb</RootNamespace>
-    <AssemblyName>2.5 Cykelløb</AssemblyName>
+    <RootNamespace>_2._1_Talsystemer</RootNamespace>
+    <AssemblyName>2.1 Talsystemer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Rytter.cs" />
-    <Compile Include="2.5 Program.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

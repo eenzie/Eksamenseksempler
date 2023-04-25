@@ -8,7 +8,7 @@ namespace _2._2_Find_største_og_mindste_tal
         static void Main(string[] args)
         {
             // Array of numbers
-            int[] talArray = { 31, 7, 10 };
+            int[] talArray = { 10, 13, 5 };
 
             var largestNumber = 0;
             var smallestNumber = 0;

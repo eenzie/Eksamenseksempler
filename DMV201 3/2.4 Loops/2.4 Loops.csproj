@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E21D031-9FAD-45E2-B460-E406FC960DA7}</ProjectGuid>
+    <ProjectGuid>{E5E0C4B0-7EAE-4E6E-B96C-74B6D689CD26}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2._5_Cykelløb</RootNamespace>
-    <AssemblyName>2.5 Cykelløb</AssemblyName>
+    <RootNamespace>_2._4_Loops</RootNamespace>
+    <AssemblyName>2.4 Loops</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Rytter.cs" />
-    <Compile Include="2.5 Program.cs" />
+    <Compile Include="2.4 Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

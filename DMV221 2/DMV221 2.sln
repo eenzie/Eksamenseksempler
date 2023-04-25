@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4 Tekst sorteret efter l�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.5 Cykelløb", "2.5 Cykelløb\2.5 Cykelløb.csproj", "{6E21D031-9FAD-45E2-B460-E406FC960DA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4 Alternative Lasse", "2.4  Alternative Lasse\2.4 Alternative Lasse.csproj", "{AFFFA449-E485-44E2-B2D7-F88F1A95C713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2 Alternativ Lasse", "2.2 Alternativ Lasse\2.2 Alternativ Lasse.csproj", "{AA9569A8-4308-4AC4-B3DF-1AAADC8FC0AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{6E21D031-9FAD-45E2-B460-E406FC960DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E21D031-9FAD-45E2-B460-E406FC960DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E21D031-9FAD-45E2-B460-E406FC960DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFFA449-E485-44E2-B2D7-F88F1A95C713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFFA449-E485-44E2-B2D7-F88F1A95C713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFFA449-E485-44E2-B2D7-F88F1A95C713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFFA449-E485-44E2-B2D7-F88F1A95C713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9569A8-4308-4AC4-B3DF-1AAADC8FC0AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9569A8-4308-4AC4-B3DF-1AAADC8FC0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9569A8-4308-4AC4-B3DF-1AAADC8FC0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9569A8-4308-4AC4-B3DF-1AAADC8FC0AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

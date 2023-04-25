@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E21D031-9FAD-45E2-B460-E406FC960DA7}</ProjectGuid>
+    <ProjectGuid>{39348F60-8376-4443-84CD-62AF2612A1A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2._5_Cykelløb</RootNamespace>
-    <AssemblyName>2.5 Cykelløb</AssemblyName>
+    <RootNamespace>_2._2_Tekstfiler</RootNamespace>
+    <AssemblyName>2.2 Tekstfiler</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Rytter.cs" />
-    <Compile Include="2.5 Program.cs" />
+    <Compile Include="2.2 Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\StatisticCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bildata.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
