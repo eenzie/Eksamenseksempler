@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F713170-F813-48FE-AAB1-BCD2FB8C9D36}</ProjectGuid>
+    <ProjectGuid>{E2C59D51-8081-46D0-85C3-7F573D2F8C49}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2._1_Tekstfiler</RootNamespace>
-    <AssemblyName>2.1_Tekstfiler</AssemblyName>
+    <RootNamespace>_2._2_Iterationer</RootNamespace>
+    <AssemblyName>2.2 Iterationer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2.1 Program.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
