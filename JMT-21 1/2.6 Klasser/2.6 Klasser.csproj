@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FAD10EF8-A0DB-42C0-88A7-0D8BE06B3591}</ProjectGuid>
+    <ProjectGuid>{D1701088-F0C3-4141-A7B0-35E5E872446D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2._4_Arrays</RootNamespace>
-    <AssemblyName>2.4 Arrays</AssemblyName>
+    <RootNamespace>_2._6_Klasser</RootNamespace>
+    <AssemblyName>2.6 Klasser</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2.4 Program.cs" />
+    <Compile Include="2.6 Program.cs" />
+    <Compile Include="Models\Lampe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.3 Tekst-filer", "2.3 Teks
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4 Arrays", "2.4 Arrays\2.4 Arrays.csproj", "{FAD10EF8-A0DB-42C0-88A7-0D8BE06B3591}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.5 Klasser", "2.5 Klasser\2.5 Klasser.csproj", "{08BFDC04-1337-4CE4-9AF7-13D113DF52EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FAD10EF8-A0DB-42C0-88A7-0D8BE06B3591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAD10EF8-A0DB-42C0-88A7-0D8BE06B3591}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAD10EF8-A0DB-42C0-88A7-0D8BE06B3591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08BFDC04-1337-4CE4-9AF7-13D113DF52EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BFDC04-1337-4CE4-9AF7-13D113DF52EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08BFDC04-1337-4CE4-9AF7-13D113DF52EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08BFDC04-1337-4CE4-9AF7-13D113DF52EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
